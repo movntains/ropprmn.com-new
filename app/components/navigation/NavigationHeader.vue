@@ -6,7 +6,7 @@
     <div class="flex justify-between items-baseline md:items-center">
       <NuxtLink
         class="custom-focus group rounded-sm text-brand-teal transition hover:text-brand-orange"
-        :to="{ name: 'slug', params: { slug: [] } }"
+        :to="{ name: 'index' }"
       >
         <span class="sr-only">Home</span>
         <SvgLogo class="motion-safe:group-hover:scale-110" />
