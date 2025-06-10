@@ -2,18 +2,15 @@ export default function useNavigation() {
   const navLinks = ref([
     {
       label: 'About',
-      to: 'slug',
-      params: { slug: ['about'] },
+      to: 'about',
     },
     {
       label: 'Work',
-      to: 'slug',
-      params: { slug: ['work'] },
+      to: 'work',
     },
     {
       label: 'Writing',
-      to: 'slug',
-      params: { slug: ['writing'] },
+      to: 'writing',
     },
   ])
 

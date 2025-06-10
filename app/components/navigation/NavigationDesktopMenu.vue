@@ -10,7 +10,7 @@
         class="relative"
       >
         <NuxtLink
-          :to="{ name: link.to, params: link.params }"
+          :to="{ name: link.to }"
           class="custom-underline custom-focus py-2 px-1 rounded-sm text-brand-slate-300"
         >
           {{ link.label }}

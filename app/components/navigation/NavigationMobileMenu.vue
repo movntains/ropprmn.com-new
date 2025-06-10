@@ -70,7 +70,7 @@
             <nav aria-label="Main">
               <div class="flex items-center flex-shrink-0 py-5 pl-8 pr-4">
                 <NuxtLink
-                  :to="{ name: 'slug', params: { slug: [] } }"
+                  :to="{ name: 'index' }"
                   class="custom-focus group rounded-sm text-brand-teal transition hover:text-brand-orange!"
                 >
                   <span class="sr-only">Home</span>
@@ -84,7 +84,7 @@
                   :class="{ 'pb-2 last-of-type:pb-0': $route.name === navLink.to }"
                 >
                   <NuxtLink
-                    :to="{ name: navLink.to, params: navLink.params }"
+                    :to="{ name: navLink.to }"
                     class="custom-underline custom-focus rounded-sm font-body text-slate-200"
                   >
                     {{ navLink.label }}
