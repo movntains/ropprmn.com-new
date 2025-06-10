@@ -1,0 +1,11 @@
+html {
+  @apply bg-black scroll-pt-10;
+}
+
+body {
+  @apply antialiased;
+}
+
+p {
+  @apply text-base leading-7 text-brand-slate-400;
+}

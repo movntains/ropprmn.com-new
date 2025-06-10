@@ -1,1 +1,29 @@
 @import 'tailwindcss';
+
+@import './base.css';
+
+@theme {
+  --color-black: oklch(0.0989 0.0082 284.8);
+  --color-black-50: oklch(0.1728 0.0082 284.8);
+  --color-brand-orange: oklch(0.787 0.1373 50.56);
+  --color-brand-slate-400: oklch(0.6624 0.0461 270.63);
+  --color-brand-slate-300: oklch(0.766 0.0458 271.2);
+  --color-brand-slate-200: oklch(0.8786 0.0455 271.71);
+  --color-brand-slate-100: oklch(0.927 0.0347 265.99);
+  --color-brand-teal: oklch(0.7237 0.1264 215.05);
+
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
+
+.router-link-exact-active {
+  @apply text-brand-teal after:left-0 after:w-full after:bg-brand-teal hover:after:w-full;
+}
+
+@utility custom-focus {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-black;
+}
+
+@utility custom-underline {
+  @apply relative transition-colors ease-in-out duration-300 hover:text-brand-orange after:content-[''] after:absolute after:left-1/2 after:-bottom-2 after:w-0 after:h-[1.5px] after:bg-brand-orange motion-safe:after:transition-all motion-safe:after:ease-in-out motion-safe:after:duration-300 hover:after:w-full hover:after:left-0;
+}
