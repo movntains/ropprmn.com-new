@@ -7,5 +7,5 @@ body {
 }
 
 p {
-  @apply text-base leading-7 text-brand-slate-400;
+  @apply leading-8 text-brand-slate-400;
 }
