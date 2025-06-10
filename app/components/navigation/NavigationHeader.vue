@@ -12,6 +12,7 @@
         <SvgLogo class="motion-safe:group-hover:scale-110" />
       </NuxtLink>
       <NavigationDesktopMenu />
+      <NavigationMobileMenu />
     </div>
   </header>
 </template>
