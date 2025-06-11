@@ -1,0 +1,12 @@
+@layer components {
+  .post__link:focus + .post__item::before {
+    background-position: 0 0 !important;
+    opacity: 0 !important;
+  }
+
+  .post__container:hover .post__item::before,
+  .post__link:focus-visible + .post__item::before {
+    background-position: -50% 0 !important;
+    opacity: 1 !important;
+  }
+}
