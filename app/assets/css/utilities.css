@@ -1,0 +1,36 @@
+@utility custom-focus {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 focus-visible:ring-offset-black;
+}
+
+@utility custom-underline {
+  @apply relative transition-colors ease-in-out duration-300 hover:text-brand-orange after:content-[''] after:absolute after:left-1/2 after:-bottom-2 after:w-0 after:h-[1.5px] after:bg-brand-orange motion-safe:after:transition-all motion-safe:after:ease-in-out motion-safe:after:duration-300 hover:after:w-full hover:after:left-0;
+}
+
+@utility custom-border {
+  background: linear-gradient(90deg, #303030 0%, #303030 25%, #0047e1 50%, #36e4da 75%, #00dc82 100%);
+  background-size: 400% auto;
+  background-position: 0 0;
+  mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#ffffff 0 0);
+  mask-composite: exclude;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: background-position 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  }
+
+  @apply content-[''] absolute inset-0 w-full p-[2px] rounded-lg opacity-50;
+}
+
+@utility custom-border--hover {
+  &:hover::before,
+  &:focus-visible::before {
+    opacity: 1;
+
+    @media (prefers-reduced-motion: no-preference) {
+      background-position: -50% 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      background-position: -66% 0;
+    }
+  }
+}
