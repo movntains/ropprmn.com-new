@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   fonts: {
     provider: 'fontsource',
     defaults: {
-      weights: [300, 400, 600, 700],
+      weights: [300, 400, 500, 600, 700],
     },
   },
   future: {
