@@ -2,7 +2,7 @@
   <BasePageWrapper>
     <section class="pt-16">
       <BasePageHeading>About</BasePageHeading>
-      <div class="space-y-7 font-light text-base text-brand-slate leading-7">
+      <div class="space-y-7">
         <p>
           I'm a full-stack web developer with a passion for building fully accessible user interfaces
           and performant, secure APIs. I work primarily with Inertia.js and Vue or React on the frontend and Laravel on the backend. Thorough test coverage is also a must-have in my book; I use Vitest and Pest, along with GitHub Actions, to build well-tested applications.
