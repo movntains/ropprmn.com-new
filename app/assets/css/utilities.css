@@ -17,7 +17,7 @@
     transition: background-position 0.3s ease-in-out, opacity 0.2s ease-in-out;
   }
 
-  @apply content-[''] absolute inset-0 w-full p-[2px] rounded-lg opacity-50;
+  @apply content-[''] absolute inset-0 w-full p-[2px] rounded-lg opacity-50 pointer-events-none;
 }
 
 @utility custom-border--hover {
