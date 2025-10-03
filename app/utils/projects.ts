@@ -72,6 +72,15 @@ export const projects: Project[] = [
       'Performed manual and automated accessibility audits and implemented enhancements to ensure a fully accessible experience and WCAG compliance.',
   },
   {
+    bgColor: '#F9F2ED',
+    role: Role.FRONTEND,
+    title: 'Wound Care Education Institute',
+    logo: '/projects/wcei.svg',
+    link: 'https://www.wcei.net/',
+    highlights: `Vue integration with Craft CMS, e-commerce functionality provided via Magento's GraphQL API, Elasticsearch integration with Vue components and Craft CMS data.`,
+    techStack: ['Vue', 'Magento', 'Tailwind CSS', 'GraphQL', 'Elasticsearch', 'Affirm', 'Authorize.net'],
+  },
+  {
     bgColor: '#CEECEC',
     role: Role.FRONTEND,
     title: 'Nurse.com',
@@ -105,6 +114,6 @@ export const projects: Project[] = [
     logo: '/projects/via-trm.png',
     link: 'https://www.viatrm.com/via-global',
     highlights: `React single-page applications for managing user data, study abroad brochures, and study abroad applications; multi-step forms with dynamic fields.`,
-    techStack: ['React', 'Styled Components'],
+    techStack: ['React', 'React Router', 'Styled Components'],
   },
 ]
