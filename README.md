@@ -1,10 +1,12 @@
-# Nuxt Content Starter
+# Personal Website
 
-Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
+This repo contains the source code for my [personal website](https://www.ropprmn.com), built with Nuxt and Tailwind.
 
-## Setup
+I've put a lot of effort into making it fully accessible. If you notice any accessibility problems, please feel free to open an issue.
 
-Make sure to install dependencies:
+## Local Setup
+
+### Install Dependencies
 
 ```bash
 # npm
@@ -20,7 +22,7 @@ yarn install
 bun install
 ```
 
-## Development Server
+### Run the Development Server
 
 Start the development server on `http://localhost:3000`:
 
@@ -37,39 +39,3 @@ yarn dev
 # bun
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
